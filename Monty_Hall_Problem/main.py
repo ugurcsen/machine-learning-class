@@ -1,5 +1,8 @@
 import random
 
+# Monty hall problem test
+
+# Choose first selection
 win = 0
 for i in range(10000):
     gates = [0, 0, 0]
@@ -9,8 +12,10 @@ for i in range(10000):
     if gates[choose] == 1:
         win += 1
 
+# Win rate
 print(win * 100 / 10000)
 
+# Choose second select
 win = 0
 for i in range(10000):
     gates = [0, 0, 0]
@@ -29,4 +34,5 @@ for i in range(10000):
     if gates[secChoose] == 1:
         win += 1
 
+# Win rate
 print(win * 100 / 10000)
